@@ -31,3 +31,32 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Mulish ExtraBold';
+  src: url('/fonts/Mulish-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('/fonts/Mulish-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Thai';
+  src: url('/fonts/PK Maehongson Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-customGold{
+  background: #A08C25;
+}
+
+.text-customGold{
+  color: #A08C25;
+}
