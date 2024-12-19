@@ -12,25 +12,25 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo / Title */}
         <div
-          className="text-customGold text-xl font-bold cursor-pointer"
+          className="text-customGold text-2xl font-bold cursor-pointer"
           style={{ fontFamily: "Thai" }}
           onClick={() => window.location.reload()} // Reloads the page on click
         >
-          Holy Bake
+          HoLy Bake
         </div>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 items-center">
-          <Link href="/" className="text-customGold" style={{ fontFamily: "Thai" }}>
+          <Link href="/" className="text-customGold text-xl" style={{ fontFamily: "Thai" }}>
             หน้าหลัก
           </Link>
-          <Link href="/recommended" className="text-customGold" style={{ fontFamily: "Thai" }}>
+          <Link href="/recommended" className="text-customGold text-xl" style={{ fontFamily: "Thai" }}>
             สินค้าแนะนำ
           </Link>
           {/* Toggle Social Links */}
           <button
             onClick={() => setShowSocialLinks(!showSocialLinks)}
-            className="text-customGold focus:outline-none"
+            className="text-customGold focus:outline-none text-xl"
             style={{ fontFamily: "Thai" }}
           >
             ติดต่อเรา
@@ -92,16 +92,16 @@ const Navbar: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md px-4 py-3">
           <div className="flex flex-col space-y-4">
-            <Link href="/" className="text-customGold" style={{ fontFamily: "Thai" }}>
+            <Link href="/" className="text-customGold text-xl" style={{ fontFamily: "Thai" }}>
               หน้าหลัก
             </Link>
-            <Link href="/recommended" className="text-customGold" style={{ fontFamily: "Thai" }}>
+            <Link href="/recommended" className="text-customGold text-xl" style={{ fontFamily: "Thai" }}>
               สินค้าแนะนำ
             </Link>
             {/* Toggle Social Links */}
             <button
               onClick={() => setShowSocialLinks(!showSocialLinks)}
-              className="text-customGold text-left focus:outline-none"
+              className="text-customGold text-left focus:outline-none text-xl"
               style={{ fontFamily: "Thai" }}
             >
               ติดต่อเรา
